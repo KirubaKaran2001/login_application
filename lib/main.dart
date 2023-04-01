@@ -5,10 +5,10 @@ import 'package:login_application/screens/login_screen.dart';
 import 'package:login_application/screens/splashscreen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized().addPostFrameCallback((_) async {
-  });
-    prefs = await SharedPreferences.getInstance();
+  WidgetsFlutterBinding.ensureInitialized().addPostFrameCallback((_) async {});
+  prefs = await SharedPreferences.getInstance();
   // await prefs!.clear();
   runApp(const MyApp());
 }
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SplashScreen(),
+      home: const LoginPage(),
       onGenerateRoute: (RouteSettings settings) {
         debugPrint('build route for ${settings.name}');
         var routes = <String, WidgetBuilder>{

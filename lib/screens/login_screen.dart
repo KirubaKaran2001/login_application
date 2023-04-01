@@ -21,10 +21,6 @@ class _LoginPageState extends State<LoginPage> {
   bool isPasswordShow = false;
   bool isApiCallProcess = false;
 
-  @override
-  void initState() {
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -175,7 +171,6 @@ class _LoginPageState extends State<LoginPage> {
         );
         prefs!.setBool('login', true);
         Navigator.of(context).pushReplacementNamed('/splash');
-        // Navigator.pushNamed(context, '/splash');
       }
     });
   }
