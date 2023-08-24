@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const LoginPage(),
+      home: const SplashScreen(),
       onGenerateRoute: (RouteSettings settings) {
         debugPrint('build route for ${settings.name}');
         var routes = <String, WidgetBuilder>{

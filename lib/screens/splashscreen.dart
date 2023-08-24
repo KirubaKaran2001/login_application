@@ -11,11 +11,13 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   bool? loginCheck;
+
   
   @override
   void initState() {
     super.initState();
     loginCheck = prefs!.getBool('login');
+    
     navigate();
   }
 
